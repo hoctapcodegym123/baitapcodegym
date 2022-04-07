@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th {
+            background: aqua;
+        }
+        table {
+            background: coral;
+        }
+    </style>
 </head>
 <body>
-$END$
+<form>
+    <table>
+        <tr>
+            <th colspan="2" style="text-align: left">ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" placeholder="typehere"></td>
+        </tr>
+        <tr>
+            <td>Ngày Sinh</td>
+            <td><input type="text" placeholder="typehere"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" name="nam" value="Nam"> Nam
+                <input type="radio" name="nam" value="Nu"> Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><b><input type="text" placeholder="typehere"></b></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select>
+                    <option value="chonlop">Chọn lớp</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" placeholder="typehere"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="vertical-align: top">Number</td>
+            <td><input type="tel" placeholder="typehere"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" value="Đăng ký">
+                <input type="reset" name="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
